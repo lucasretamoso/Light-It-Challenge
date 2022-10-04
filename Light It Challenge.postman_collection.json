@@ -1,0 +1,1496 @@
+{
+	"info": {
+		"_postman_id": "29688c74-b6bd-46db-9b4f-b3d71dd39b66",
+		"name": "Light It Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20331197"
+	},
+	"item": [
+		{
+			"name": "Cognito",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"lucasretamoso@gmail.com\",\r\n    \"password\": \"password123\",\r\n    \"birthdate\": \"1994-07-21\",\r\n    \"gender\": \"Male\",\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Retamoso\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/signUp",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"signUp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"lucasretamoso@gmail.com\",\r\n    \"password\": \"password123\",\r\n    \"birthdate\": \"1994-07-21\",\r\n    \"gender\": \"Male\",\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Retamoso\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/signUp",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"signUp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 21:45:15 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "429e97f6-860d-4c03-8867-87f6c526ae9f"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZcqsrEknIAMFzIw="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b57ea-39cae6aa769b27e727d04370;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 449a33633af422ed0455ecaba4d77f38.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "EZE51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "DgkC0n52aig_VqeJIZnTtoaDcmgBYFQ2Mzhtcu2LgVLUVRrM90kjuw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"$metadata\": {\n        \"httpStatusCode\": 200,\n        \"requestId\": \"b6708eb7-3721-4b46-9794-f753da86036d\",\n        \"attempts\": 1,\n        \"totalRetryDelay\": 0\n    },\n    \"CodeDeliveryDetails\": {\n        \"AttributeName\": \"email\",\n        \"DeliveryMedium\": \"EMAIL\",\n        \"Destination\": \"l***@g***\"\n    },\n    \"UserConfirmed\": false,\n    \"UserSub\": \"05c8c037-d7ab-4c96-9783-cb028838fe62\"\n}"
+						},
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"lucasretamoso+2@gmail.com\",\r\n    \"password\": \"password123\",\r\n    \"birthdate\": \"1994-07-21\",\r\n    \"gender\": \"Male\",\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Retamoso\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/signUp",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"signUp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:56:27 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "3761c49f-d768-4c3d-916c-5d20cbe66e48"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdPfuHVrIAMFyUA="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b92ca-3e46683d046e473a7668c377;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "mSC0hkvMxZ28sGuH6N_52ibituUevGL0aqNLk0LVKTeH_be-4ofFgw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Gender must be male or female\"\n}"
+						},
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"lucasretamoso+2@gmail.com\",\r\n    \"password\": \"password123\",\r\n    \"birthdate\": \"1994-07-21\",\r\n    \"gender\": \"what\",\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Retamoso\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/signUp",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"signUp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:56:43 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "eb85322f-99b4-4347-828c-cbc498520444"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdPiRG3UoAMFsAg="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b92db-0bb5886f1d405c794476b4ef;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "ujWVZSsoGlliBqbMQsoJ29dgbnVYssk9okhvUSzw2hKtHpwwkt-6nA=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Gender must be male or female\"\n}"
+						},
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"lucasretamoso+3@gmail.com\",\r\n    \"password\": \"password123\",\r\n    \"birthdate\": \"1994-07-40\",\r\n    \"gender\": \"male\",\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Retamoso\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/signUp",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"signUp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:57:12 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "7bcafaf9-75ae-47db-a549-01d7c3e0da27"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdPm5FvVIAMFmUg="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b92f8-0c783206047e9165028a0869;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "wAxEKV4Ws1LURh_QGw0P18FoMdDqvaLGJVQ6i-2l7_qxANmB8u481g=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Birthdate must be the format YYYY/MM/DD\"\n}"
+						},
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"lucasretamoso+3@gmail.com\",\r\n    \"password\": \"password123\",\r\n    \"birthdate\": \"1994-07-40\",\r\n    \"gender\": \"male\",\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Retamoso\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/signUp",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"signUp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 02:00:08 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "10c92040-ca0e-48fa-89ae-2abfb1f282fe"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdQCUEmVIAMFcbg="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b93a8-72f6824a167f96de3e437c2b;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "eDAznKZi5OCGpMqB0LAJkCkAJ29i-UnF7tVgq702YOMvd_Up3-ZOEg=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Birthdate must be a valid Date format\"\n}"
+						}
+					]
+				},
+				{
+					"name": "verifyUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"lucasretamoso@gmail.com\",\r\n    \"code\": \"311742\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/verifyUser",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"verifyUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"lucasretamoso@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/login",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"lucasretamoso@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/login",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1218"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 21:52:43 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "03a021cc-88da-4289-a9e6-51a9ac124435"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZcrywHMSoAMF_hw="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b59ab-5c6a5f796bcc5ba475cb8754;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 5f971e914439865abbad332444c0fe9e.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "EZE51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "I7zxFmbuSbb1bxOfSrkcdlPfcnHppDj0_tfcU9pWgFqU8eKG6gVuKg=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6IjIxNWUyZGJkLTFlZDYtNGM4Mi1iZjhhLTQ3Yjk3Mzc0ZmE0YyIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyMGE2Mzg2Ni1jYWVkLTRlM2QtOTRjNi1iODczM2JhNTllNDQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDgzMzk2MywiZXhwIjoxNjY0ODM3NTYzLCJpYXQiOjE2NjQ4MzM5NjMsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiOTJmYTY3NC1lNmY5LTRjNTgtYmRhYi0wOTIzMWUwYmE1MzYiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.Umt7sSRQJYheuqJYC1-vzuwvCCS7salAgtsqmN-GvumDfcPohWNRW88bAlWwr20c71sYSeYH_G5h6QIal0fVugOPgmYSNojQjkZF9pTec6YR06hXLsC4kyvzfZh-BQoG1dF7MMji_QIWq5C-VLqsH_TLwW5cP4mfxzB3tTA3mYjsYqlDUjPU9ewY3EgKudCnD-odIeQh8Vz5NfikjoFxklukghF5Zvo_LKuH8nraoxa7mnQd5PyUqUj7KxMK-dG87c392zYx4jjmV1W_v4oVW2zDcqHKW17B0D26ZC3eFxN59YSANEELJCg_emywRZbIMDkeJ3J-R1ZAhJ1gKIs05w\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ApiMedic",
+			"item": [
+				{
+					"name": "symptoms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/symptoms",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"symptoms"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "symptoms",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/symptoms",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"symptoms"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 21:53:22 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "21641b95-ae81-4460-a65e-1d07d4e8e9c2"
+								},
+								{
+									"key": "x-amzn-ErrorType",
+									"value": "UnauthorizedException"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "Zcr47GjZIAMFf5Q="
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 5f971e914439865abbad332444c0fe9e.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "EZE51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "KsWp6H20c6FMgpOfeJMgF2W7HJDjWx1xI8HjRaeUDQO0GkywfrOH7w=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Unauthorized\"\n}"
+						},
+						{
+							"name": "symptoms",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6IjIxNWUyZGJkLTFlZDYtNGM4Mi1iZjhhLTQ3Yjk3Mzc0ZmE0YyIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyMGE2Mzg2Ni1jYWVkLTRlM2QtOTRjNi1iODczM2JhNTllNDQiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDgzMzk2MywiZXhwIjoxNjY0ODM3NTYzLCJpYXQiOjE2NjQ4MzM5NjMsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiOTJmYTY3NC1lNmY5LTRjNTgtYmRhYi0wOTIzMWUwYmE1MzYiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.Umt7sSRQJYheuqJYC1-vzuwvCCS7salAgtsqmN-GvumDfcPohWNRW88bAlWwr20c71sYSeYH_G5h6QIal0fVugOPgmYSNojQjkZF9pTec6YR06hXLsC4kyvzfZh-BQoG1dF7MMji_QIWq5C-VLqsH_TLwW5cP4mfxzB3tTA3mYjsYqlDUjPU9ewY3EgKudCnD-odIeQh8Vz5NfikjoFxklukghF5Zvo_LKuH8nraoxa7mnQd5PyUqUj7KxMK-dG87c392zYx4jjmV1W_v4oVW2zDcqHKW17B0D26ZC3eFxN59YSANEELJCg_emywRZbIMDkeJ3J-R1ZAhJ1gKIs05w",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/symptoms",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"symptoms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2086"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 21:59:32 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "afced646-5bf5-43e6-ae70-29f2b596eda0"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZcsyQGTkIAMFm6g="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b5b41-14d643fe5460e9d573c5baab;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 23f94cbeaed412b16bcf3002e9a59ac0.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "EZE51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "R9MFvMjOVA89jpGPk0ZLwAk7kJgkQPUxbQ-e2Rx75ln5xdQTk7TzFg=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"ID\": 10,\n        \"Name\": \"Abdominal pain\"\n    },\n    {\n        \"ID\": 238,\n        \"Name\": \"Anxiety\"\n    },\n    {\n        \"ID\": 104,\n        \"Name\": \"Back pain\"\n    },\n    {\n        \"ID\": 75,\n        \"Name\": \"Burning eyes\"\n    },\n    {\n        \"ID\": 46,\n        \"Name\": \"Burning in the throat\"\n    },\n    {\n        \"ID\": 170,\n        \"Name\": \"Cheek swelling\"\n    },\n    {\n        \"ID\": 17,\n        \"Name\": \"Chest pain\"\n    },\n    {\n        \"ID\": 31,\n        \"Name\": \"Chest tightness\"\n    },\n    {\n        \"ID\": 175,\n        \"Name\": \"Chills\"\n    },\n    {\n        \"ID\": 139,\n        \"Name\": \"Cold sweats\"\n    },\n    {\n        \"ID\": 15,\n        \"Name\": \"Cough\"\n    },\n    {\n        \"ID\": 207,\n        \"Name\": \"Dizziness\"\n    },\n    {\n        \"ID\": 244,\n        \"Name\": \"Drooping eyelid\"\n    },\n    {\n        \"ID\": 273,\n        \"Name\": \"Dry eyes\"\n    },\n    {\n        \"ID\": 87,\n        \"Name\": \"Earache\"\n    },\n    {\n        \"ID\": 92,\n        \"Name\": \"Early satiety\"\n    },\n    {\n        \"ID\": 287,\n        \"Name\": \"Eye pain\"\n    },\n    {\n        \"ID\": 33,\n        \"Name\": \"Eye redness\"\n    },\n    {\n        \"ID\": 153,\n        \"Name\": \"Fast, deepened breathing\"\n    },\n    {\n        \"ID\": 76,\n        \"Name\": \"Feeling of foreign body in the eye\"\n    },\n    {\n        \"ID\": 11,\n        \"Name\": \"Fever\"\n    },\n    {\n        \"ID\": 57,\n        \"Name\": \"Going black before the eyes\"\n    },\n    {\n        \"ID\": 9,\n        \"Name\": \"Headache\"\n    },\n    {\n        \"ID\": 45,\n        \"Name\": \"Heartburn\"\n    },\n    {\n        \"ID\": 122,\n        \"Name\": \"Hiccups\"\n    },\n    {\n        \"ID\": 149,\n        \"Name\": \"Hot flushes\"\n    },\n    {\n        \"ID\": 40,\n        \"Name\": \"Increased thirst\"\n    },\n    {\n        \"ID\": 73,\n        \"Name\": \"Itching eyes\"\n    },\n    {\n        \"ID\": 96,\n        \"Name\": \"Itching in the nose\"\n    },\n    {\n        \"ID\": 35,\n        \"Name\": \"Lip swelling\"\n    },\n    {\n        \"ID\": 235,\n        \"Name\": \"Memory gap\"\n    },\n    {\n        \"ID\": 112,\n        \"Name\": \"Menstruation disorder\"\n    },\n    {\n        \"ID\": 123,\n        \"Name\": \"Missed period\"\n    },\n    {\n        \"ID\": 44,\n        \"Name\": \"Nausea\"\n    },\n    {\n        \"ID\": 136,\n        \"Name\": \"Neck pain\"\n    },\n    {\n        \"ID\": 114,\n        \"Name\": \"Nervousness\"\n    },\n    {\n        \"ID\": 133,\n        \"Name\": \"Night cough\"\n    },\n    {\n        \"ID\": 12,\n        \"Name\": \"Pain in the limbs\"\n    },\n    {\n        \"ID\": 203,\n        \"Name\": \"Pain on swallowing\"\n    },\n    {\n        \"ID\": 37,\n        \"Name\": \"Palpitations\"\n    },\n    {\n        \"ID\": 140,\n        \"Name\": \"Paralysis\"\n    },\n    {\n        \"ID\": 54,\n        \"Name\": \"Reduced appetite\"\n    },\n    {\n        \"ID\": 14,\n        \"Name\": \"Runny nose\"\n    },\n    {\n        \"ID\": 29,\n        \"Name\": \"Shortness of breath\"\n    },\n    {\n        \"ID\": 124,\n        \"Name\": \"Skin rash\"\n    },\n    {\n        \"ID\": 52,\n        \"Name\": \"Sleeplessness\"\n    },\n    {\n        \"ID\": 95,\n        \"Name\": \"Sneezing\"\n    },\n    {\n        \"ID\": 13,\n        \"Name\": \"Sore throat\"\n    },\n    {\n        \"ID\": 64,\n        \"Name\": \"Sputum\"\n    },\n    {\n        \"ID\": 179,\n        \"Name\": \"Stomach burning\"\n    },\n    {\n        \"ID\": 28,\n        \"Name\": \"Stuffy nose\"\n    },\n    {\n        \"ID\": 138,\n        \"Name\": \"Sweating\"\n    },\n    {\n        \"ID\": 248,\n        \"Name\": \"Swollen glands in the armpits\"\n    },\n    {\n        \"ID\": 169,\n        \"Name\": \"Swollen glands on the neck\"\n    },\n    {\n        \"ID\": 211,\n        \"Name\": \"Tears\"\n    },\n    {\n        \"ID\": 16,\n        \"Name\": \"Tiredness\"\n    },\n    {\n        \"ID\": 115,\n        \"Name\": \"Tremor at rest\"\n    },\n    {\n        \"ID\": 144,\n        \"Name\": \"Unconsciousness, short\"\n    },\n    {\n        \"ID\": 101,\n        \"Name\": \"Vomiting\"\n    },\n    {\n        \"ID\": 181,\n        \"Name\": \"Vomiting blood\"\n    },\n    {\n        \"ID\": 56,\n        \"Name\": \"weakness\"\n    },\n    {\n        \"ID\": 23,\n        \"Name\": \"Weight gain\"\n    },\n    {\n        \"ID\": 30,\n        \"Name\": \"Wheezing\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "diagnosis",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/diagnosis?symptoms=[10]",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"diagnosis"
+							],
+							"query": [
+								{
+									"key": "symptoms",
+									"value": "[10]"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "diagnosis",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/diagnosis?symptoms=[10]",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"diagnosis"
+									],
+									"query": [
+										{
+											"key": "symptoms",
+											"value": "[10]"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2418"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:03:17 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "7dd21471-db25-4d2a-824b-c07daa1f2065"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdHtEHVYIAMFoxA="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b8653-4650ffba12e7ead746ac74c5;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 5df90d8b07f873c947e7e3d9ff174026.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "yo66_n1F2GB1rHpSvsGdUvy8uIrZ0Yp6xIY5o0U9rAyS9grHD4hOSQ=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"Issue\": {\n            \"ID\": 495,\n            \"Name\": \"Bloated belly\",\n            \"Accuracy\": 90,\n            \"Icd\": \"R14\",\n            \"IcdName\": \"Flatulence and related conditions\",\n            \"ProfName\": \"Meteorism\",\n            \"Ranking\": 1\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            }\n        ]\n    },\n    {\n        \"Issue\": {\n            \"ID\": 53,\n            \"Name\": \"Constipation\",\n            \"Accuracy\": 45,\n            \"Icd\": \"K59.0\",\n            \"IcdName\": \"Constipation\",\n            \"ProfName\": \"Obstipation\",\n            \"Ranking\": 2\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 14,\n                \"Name\": \"Gastroenterology\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 19,\n                \"Name\": \"Internal medicine\",\n                \"SpecialistID\": 0\n            }\n        ]\n    },\n    {\n        \"Issue\": {\n            \"ID\": 281,\n            \"Name\": \"Food poisoning\",\n            \"Accuracy\": 33.75,\n            \"Icd\": \"A05;A02;A03;A04\",\n            \"IcdName\": \"Other bacterial foodborne intoxications, not elsewhere classified;Other salmonella infections;Shigellosis;Other bacterial intestinal infections\",\n            \"ProfName\": \"Foodborne illness\",\n            \"Ranking\": 3\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 19,\n                \"Name\": \"Internal medicine\",\n                \"SpecialistID\": 0\n            }\n        ]\n    },\n    {\n        \"Issue\": {\n            \"ID\": 51,\n            \"Name\": \"Loose watery stools\",\n            \"Accuracy\": 22.5,\n            \"Icd\": \"A09;K59.1;K52.9\",\n            \"IcdName\": \"Other gastroenteritis and colitis of infectious and unspecified origin;Functional diarrhoea;Noninfective gastroenteritis and colitis, unspecified\",\n            \"ProfName\": \"Diarrhea\",\n            \"Ranking\": 4\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 14,\n                \"Name\": \"Gastroenterology\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 19,\n                \"Name\": \"Internal medicine\",\n                \"SpecialistID\": 0\n            }\n        ]\n    },\n    {\n        \"Issue\": {\n            \"ID\": 324,\n            \"Name\": \"Kidney stones\",\n            \"Accuracy\": 9.99,\n            \"Icd\": \"N20\",\n            \"IcdName\": \"Calculus of kidney and ureter\",\n            \"ProfName\": \"Nephrolith\",\n            \"Ranking\": 5\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 42,\n                \"Name\": \"Urology\",\n                \"SpecialistID\": 0\n            }\n        ]\n    },\n    {\n        \"Issue\": {\n            \"ID\": 59,\n            \"Name\": \"Urinary tract infection\",\n            \"Accuracy\": 9.28125,\n            \"Icd\": \"N39.0\",\n            \"IcdName\": \"Urinary tract infection, site not specified\",\n            \"ProfName\": \"Cystitis\",\n            \"Ranking\": 6\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 18,\n                \"Name\": \"Gynecology\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 19,\n                \"Name\": \"Internal medicine\",\n                \"SpecialistID\": 0\n            }\n        ]\n    },\n    {\n        \"Issue\": {\n            \"ID\": 130,\n            \"Name\": \"Hernia\",\n            \"Accuracy\": 9.1125,\n            \"Icd\": \"K40;K41;K42;K43;K44;K45;K46\",\n            \"IcdName\": \"Inguinal hernia;Femoral hernia;Umbilical hernia;Ventral hernia;Diaphragmatic hernia;Other abdominal hernia;Unspecified abdominal hernia\",\n            \"ProfName\": \"Abdominal hernia\",\n            \"Ranking\": 7\n        },\n        \"Specialisation\": [\n            {\n                \"ID\": 15,\n                \"Name\": \"General practice\",\n                \"SpecialistID\": 0\n            },\n            {\n                \"ID\": 39,\n                \"Name\": \"Surgery\",\n                \"SpecialistID\": 0\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "issue",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/issue?issueId=495",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"issue"
+							],
+							"query": [
+								{
+									"key": "issueId",
+									"value": "495"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "issue",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/issue?issueId=495",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"issue"
+									],
+									"query": [
+										{
+											"key": "issueId",
+											"value": "495"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1566"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:07:53 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "d2f93251-9d9a-484a-bb2f-384c24c3feb3"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdIYREheoAMF5Rw="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b8767-48d6f1a8600fe33f3da3ae23;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 5df90d8b07f873c947e7e3d9ff174026.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "iVwVpqsqJmyaPLZ5ed76-fGhyL5LbBs3BnVwdxtjcutNx96wpWfwYQ=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Description\": \"Meteorism is a condition where the abdomen feels full and tight. In this situation, the belly may look swollen and distended.\",\n    \"DescriptionShort\": \"Meteorism describes the accumulation of gas in the abdomen or in the intestines, accompanied by distention. It is normally not a serious problem. Sometimes, over-the-counter medication is enough to relieve the symptoms. But if meteorism is caused by certain diseases, one should consult a doctor.\",\n    \"MedicalCondition\": \"Causes of meteorism include 1) swallowing air, 2) constipation, 3) gastro-esophageal reflux (GERD), 4) irritable bowel syndrome, 5) lactose intolerance or problems with digestion, 6) overeating, 7) small bowel bacterial overgrowth, 8) weight gain and 9) weak abdominal muscles. Certain diseases may also cause meteorism. These include ascites and tumors, celiac diseases, dumping syndrome, intestinal obstruction and when the pancreas does not produce enough digestive enzyme.\",\n    \"Name\": \"Bloated belly\",\n    \"PossibleSymptoms\": \"Abdominal pain\",\n    \"ProfName\": \"Meteorism\",\n    \"Synonyms\": null,\n    \"TreatmentDescription\": \"To relieve the symptom of the feeling of distention in the abdomen, there are multiple over-the-counter drugs. One can avoid meteorism by following some advice: 1) avoid carbonated drinks and food with high levels of fructose or sorbitol, 2) avoid food that can produce gas such as beans, cabbages and the like, 3) do not eat too quickly, 4) stop smoking and 5) work out. If meteorism is caused by an underlying disease, then one should visit a specialist to treat the disease first.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User History",
+			"item": [
+				{
+					"name": "Add a new history",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"issueId\": 495\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"history"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "history",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"history"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "33"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:06:27 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "e645303d-82b8-451d-b913-848439f8c3d6"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdILBG3ZIAMF5xg="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b8713-163bc5492a29de3d339af4ea;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 5df90d8b07f873c947e7e3d9ff174026.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "zjpodhqmitWR0x_4O1v3ybdeP6a_5-3Tf8zP78Sf6vcaliBKRhfYWA=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"issueId is required\"\n}"
+						},
+						{
+							"name": "history",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"issueId\": 495\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:42:57 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "b1f81042-1321-420f-a64c-6376d545abcd"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdNhAEnVoAMFfqw="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b8f9f-61e672b95dc81cec649d1dd1;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "8hyjdbif39CtgtmVeJGwVehpvcaupoJt4YRXy6uE1JzehQgETErVrQ=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"7V_6DrxQnMRdH7lYDXCMZ\",\n        \"issueId\": 495,\n        \"username\": \"lucasretamoso@gmail.com\",\n        \"createdAt\": \"2022-10-04T01:42:57.515Z\",\n        \"functionality\": null\n    },\n    {\n        \"id\": \"t-Y90eeHP04EbLb33rQoH\",\n        \"issueId\": 495,\n        \"username\": \"lucasretamoso@gmail.com\",\n        \"createdAt\": \"2022-10-04T01:07:06.540Z\",\n        \"functionality\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Histories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm History",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"functionality\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history/t-Y90eeHP04EbLb33rQoH",
+							"protocol": "https",
+							"host": [
+								"pjz5brl4qe",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"history",
+								"t-Y90eeHP04EbLb33rQoH"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "history",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"functionality\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history/7V_6DrxQnMRdH7lYDXCMZ",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"history",
+										"7V_6DrxQnMRdH7lYDXCMZ"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:51:55 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "aa4ad044-89e2-42c1-aa07-0bd54bf891bd"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdO1BGYmIAMFX_A="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b91b9-163be91b1b4aa8b10064195f;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "wSMmHENDFJ6fGPso3JwFIy4dtFnXY0usae5H65Gsc8ss0otU_tYx6g=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"7V_6DrxQnMRdH7lYDXCMZ\",\n        \"issueId\": 495,\n        \"username\": \"lucasretamoso@gmail.com\",\n        \"createdAt\": \"2022-10-04T01:42:57.515Z\",\n        \"functionality\": true\n    },\n    {\n        \"id\": \"t-Y90eeHP04EbLb33rQoH\",\n        \"issueId\": 495,\n        \"username\": \"lucasretamoso@gmail.com\",\n        \"createdAt\": \"2022-10-04T01:07:06.540Z\",\n        \"functionality\": null\n    }\n]"
+						},
+						{
+							"name": "history",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiJib3JuSzlUVmdVWHd1MkNrMWptMDZ5d1F4ZFRhYWk1THRoTDJBTHBUK09BPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNWM4YzAzNy1kN2FiLTRjOTYtOTc4My1jYjAyODgzOGZlNjIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYmlydGhkYXRlIjoiMTk5NC0wNy0yMSIsImdlbmRlciI6Ik1hbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9ySjdWSk93NU4iLCJjb2duaXRvOnVzZXJuYW1lIjoiMDVjOGMwMzctZDdhYi00Yzk2LTk3ODMtY2IwMjg4MzhmZTYyIiwiZ2l2ZW5fbmFtZSI6Ikx1Y2FzIiwib3JpZ2luX2p0aSI6ImUxZTdlYTZhLTExOGMtNGU0YS05MGM3LTZkZDkwZGZlNzdiYSIsImF1ZCI6IjJjaWszMWtjMTVldHVqNnE3Ym9hYnJuM2U3IiwiZXZlbnRfaWQiOiIyZjBiNmViZS04NjBjLTQ1YzUtOTc0Yi1hZDIxMDdhNzRjMDciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2NDg0NTM3NywiZXhwIjoxNjY0ODQ4OTc3LCJpYXQiOjE2NjQ4NDUzNzcsImZhbWlseV9uYW1lIjoiUmV0YW1vc28iLCJqdGkiOiJiMDZiN2E1Yy03MmVjLTRkMTItODUzNi1kMjk2MzkxYWJkNDgiLCJlbWFpbCI6Imx1Y2FzcmV0YW1vc29AZ21haWwuY29tIn0.QWon-4UlmKQVZf5LASJEFiU30nzUxBB0AalWcmoncsJHpB3EMmxk8DuxdSfguWarOkBXIGtqwczjCJLpc4cvfoZFZyIcFzJzLJVsEeJ2q3gt78UW6Ezze5c6MGtLwv4V5rIVotaiPNf0eKVqsMghT4YbfI-O6whZV5qfroGizlZKlr_TkZnIuxWuM-ulsoyaDeVSPj8LKdJmGey2hKm79wvXqQ95BozwrhkCkVv68zpFsAQUB0x_STHooDC17J27_mSZXsegR9YDdQrx7hk2S_PD_aKWJxVBgFzndNGzMMyDCf2xCEUxIkIcceZ77W1VIJd5CHJJ4NtvAI6YTe0nFw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"functionality\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pjz5brl4qe.execute-api.us-east-1.amazonaws.com/dev/history/t-Y90eeHP04EbLb33rQoH",
+									"protocol": "https",
+									"host": [
+										"pjz5brl4qe",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"history",
+										"t-Y90eeHP04EbLb33rQoH"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "286"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Oct 2022 01:52:51 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "acab55a7-5c62-4501-9f89-e8d3ff5b9cee"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "ZdO-DGAQoAMF74g="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-633b91f3-608e421e60f9664a7ea9d63d;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 0091a18cf6c89e8cba78991fa217762c.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU3-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "XjGs_eR44bfodeqtNvRpfxiSEcTix6w1CKkf-XOM8z0KJQ9tWkjaig=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"7V_6DrxQnMRdH7lYDXCMZ\",\n        \"issueId\": 495,\n        \"username\": \"lucasretamoso@gmail.com\",\n        \"createdAt\": \"2022-10-04T01:42:57.515Z\",\n        \"functionality\": true\n    },\n    {\n        \"id\": \"t-Y90eeHP04EbLb33rQoH\",\n        \"issueId\": 495,\n        \"username\": \"lucasretamoso@gmail.com\",\n        \"createdAt\": \"2022-10-04T01:07:06.540Z\",\n        \"functionality\": false\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
